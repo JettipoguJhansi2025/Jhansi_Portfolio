@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Jettipogu Jhansi | Computer Science Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f1f5f9;
+      color: #0f172a;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+    .top-toolbar {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+    .btn-back {
+      background: #ffffff;
+      color: #0f172a;
+      border-color: #cbd5e1;
+    }
+    .btn-back:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
+    }
+    .btn-print {
+      background: #0284c7;
+      color: #ffffff;
+    }
+    .btn-print:hover {
+      background: #0369a1;
+    }
+    .resume-sheet {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+      margin-bottom: 0.4rem;
+    }
+    .contact-line {
+      font-size: 0.88rem;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.65rem;
+    }
+    .contact-line a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #0f172a;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 0.3rem;
+      margin-top: 1.35rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.03em;
+    }
+    .entry {
+      margin-bottom: 0.85rem;
+    }
+    .entry-head {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #0f172a;
+    }
+    .entry-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      color: #475569;
+    }
+    .entry-sub .cgpa {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    p, li {
+      font-size: 0.9rem;
+      color: #334155;
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      margin-top: 0.35rem;
+    }
+    li {
+      margin-bottom: 0.3rem;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .sign-date {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .top-toolbar {
+        display: none !important;
+      }
+      .resume-sheet {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-toolbar">
+    <a href="index.html" class="btn btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <button onclick="window.print()" class="btn btn-print">
+      <i class="fa-solid fa-print"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <main class="resume-sheet">
+    <header class="header">
+      <h1>JETTIPOGU JHANSI</h1>
+      <div class="contact-line">
+        <span>Kurnool | Andhra Pradesh</span>
+        <span>|</span>
+        <span><a href="tel:+918523898597">8523898597</a></span>
+        <span>|</span>
+        <span><a href="mailto:jhansijettipogu@gmail.com">jhansijettipogu@gmail.com</a></span>
+      </div>
+      <div class="contact-line" style="margin-top: 0.35rem;">
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/jettipogu-jhansi-019263371" target="_blank">www.linkedin.com/in/jettipogu-jhansi-019263371</a></span>
+        <span>|</span>
+        <span>GitHub: <a href="https://github.com/JettipoguJhansi2025" target="_blank">https://github.com/JettipoguJhansi2025</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-title">Career Objective</h2>
+      <p>
+        To obtain entry-level position in a reputed organization where I can apply my programming skills in Java, Python, and web development, enhance my technical knowledge, and contribute to organizational growth while continuously learning and developing my personal and professional skills.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span>B.Tech – Computer Science Engineering</span>
+          <span>2023–2027</span>
+        </div>
+        <div class="entry-sub">
+          <span>Ashoka Women's Engineering College, Kurnool</span>
+          <span class="cgpa">CGPA: 8.5</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>Intermediate – MPC</span>
+          <span>2021–2023</span>
+        </div>
+        <div class="entry-sub">
+          <span>Dr. B.R. Ambedkar Gurukulam, Pattikonda, Kurnool</span>
+          <span class="cgpa">CGPA: 8.6</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <span>SSC</span>
+          <span>2020–2021</span>
+        </div>
+        <div class="entry-sub">
+          <span>APSWRS School, Kambalapadu, Kurnool</span>
+          <span class="cgpa">CGPA: 9.1</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Technical Skills</h2>
+      <p>
+        <strong>Programming:</strong> Python, Java, C, C++, Data Structure and OOPS<br />
+        <strong>Web Technology:</strong> HTML, CSS, JavaScript<br />
+        <strong>Database:</strong> Basic SQL, DBMS<br />
+        <strong>Soft Skills:</strong> Communication, Team Work and Analytical Thinking<br />
+        <strong>Tools:</strong> MS Excel, PowerPoint, Microsoft Word, VS Code<br />
+        <strong>Problem Solving:</strong> CodeChef / Problem Practice
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Internship – Online</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span>LifeBoxNextGen – Python Programming</span>
+          <span>Dec 2025</span>
+        </div>
+        <ul>
+          <li>Completed a short-term online internship focused on Python programming and practical exercises.</li>
+          <li>Solved programming problems using logical and analytical thinking.</li>
+          <li>Applied lists, tuples, and dictionaries to manage data and implement solutions.</li>
+          <li>Debugged and improved code iteratively to solve problems effectively.</li>
+          <li>Converted real-world scenarios into practical programming solutions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Projects</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span>Student Registration System | Frontend Developer</span>
+          <span>HTML, CSS, JavaScript</span>
+        </div>
+        <p style="margin-top: 0.2rem; font-style: italic; color: #475569;">
+          Developed a responsive web application to simplify student registration and provide an organized way to manage student information.
+        </p>
+        <ul>
+          <li>Designed and developed a Student Registration System with a simple and user-friendly interface.</li>
+          <li>Implemented form validation to improve data accuracy.</li>
+          <li>Used JavaScript to dynamically manage student information.</li>
+          <li>Developed Add, Edit, and Delete functionality.</li>
+          <li>Used DOM manipulation to update student records.</li>
+          <li>Focused on solving practical data-entry and record-management requirements.</li>
+        </ul>
+      </div>
+
+      <div class="entry" style="margin-top: 0.85rem;">
+        <div class="entry-head">
+          <span>Team Collaboration Dashboard</span>
+          <span>Python, Flask, HTML, CSS, JavaScript, SQLite</span>
+        </div>
+        <p style="margin-top: 0.2rem; font-style: italic; color: #475569;">
+          Developed a web-based application to improve team coordination and organize project-related activities through a centralized dashboard.
+        </p>
+        <ul>
+          <li>Developed a web-based dashboard to support team collaboration and task management.</li>
+          <li>Designed a user-friendly interface to organize team activities and track task progress.</li>
+          <li>Used Flask for backend development and SQLite for database management.</li>
+          <li>Implemented functionality to manage and update project-related information efficiently.</li>
+          <li>Collaborated with team members to develop and integrate project features.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Certifications</h2>
+      <ul>
+        <li>Python Course – NEXGEN FREEDU – Online</li>
+        <li>Web Development – GNANAVASI TECHNOLOGY – Online</li>
+        <li>Cloud Computing – NPTEL, 2026 - Online</li>
+        <li>Java Programming – HackerRank – Online</li>
+        <li>Introduction to Generative AI – Google Cloud Skills Boost -- Online</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Extracurricular Activities</h2>
+      <ul>
+        <li>Participated in technical hackathons to enhance problem-solving and teamwork skills.</li>
+        <li>Participated in paper presentations and technical seminars to improve technical knowledge and presentation skills.</li>
+        <li>Engaged in coding practice to strengthen programming and logical reasoning abilities.</li>
+        <li>Collaborated with team members on academic projects to develop teamwork and communication skills.</li>
+      </ul>
+    </section>
+
+    <section class="grid-3">
+      <div>
+        <h2 class="section-title" style="margin-top: 0;">Additional Strengths</h2>
+        <ul>
+          <li>Self-Motivated</li>
+          <li>Adaptable</li>
+          <li>Willingness to Learn</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="section-title" style="margin-top: 0;">Interests</h2>
+        <ul>
+          <li>Solving Puzzles</li>
+          <li>Indoor Games</li>
+          <li>Paper Craft</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="section-title" style="margin-top: 0;">Languages</h2>
+        <ul>
+          <li>Telugu (Native)</li>
+          <li>English</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="sign-date">
+      <div><strong>Date:</strong> 02-11-2026</div>
+      <div><strong>Signature:</strong> J. Jhansi</div>
+    </footer>
+  </main>
+</body>
+</html>
